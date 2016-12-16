@@ -8,7 +8,7 @@
 
 /*
 	Description: 
-	Class to represent a single chess piece. Datum includes type, 
+	Class to represent a single chess piece. Data includes type, 
 	color, and location information. One constructor is available
 	that takes color, type, row, and column as parameters.
 	Mutators for row and column are available, as well as accessors
@@ -18,7 +18,7 @@
 
 public class ChessPiece 
 {
-	//Class datum
+	//Class data
 	String type, color;
 	int row, col;
 	
@@ -32,35 +32,16 @@ public class ChessPiece
 		
 	}
 	
-	//Type accessor
-	public String getType()
-	{
-		return type;
-	}
-	
-	//Color accessor
-	public String getColor()
-	{
-		return color;
-	}
-	
-	//Row accessor
-	public int getRow()
-	{
-		return row;
-	}
-	
-	//Column accessor
-	public int getColumn()
-	{
-		return col;
-	}
+	//Accessor methods
+	public String getType() { return type; }
+	public String getColor() { return color; }
+	public int getRow() { return row; }
+	public int getColumn() { return col; }
 	
 	//Row mutator method
 	public void setRow(int row)
 	{
-		if (row >= 0 && row <= 7)	//Data verify
-			this.row = row;	
+		if (row >= 0 && row <= 7) this.row = row;	//Data verify
 	}
 	
 	//Column mutator method
